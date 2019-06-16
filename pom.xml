@@ -84,6 +84,20 @@
 			</exclusions>
 		</dependency>
 	</dependencies>
+	
+	<distributionManagement>
+		<snapshotRepository>
+		    <id>releases</id>
+		    <name>User Porject Snapshot</name>
+		    <url>http://nexus.linesno.com/nexus/content/repositories/releases/</url>
+		    <uniqueVersion>true</uniqueVersion>
+		</snapshotRepository>
+		<repository>
+		    <id>snapshots</id>
+		    <name>User Porject Release</name>
+		    <url>http://nexus.linesno.com/nexus/content/repositories/snapshots/</url>
+		</repository>
+	    </distributionManagement>
 
 	<build>
 		<plugins>
